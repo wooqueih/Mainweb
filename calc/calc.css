@@ -1,0 +1,113 @@
+body {
+    background-color:white;
+}
+
+#hubDiv {
+    text-align: center;
+}
+
+#hub {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+
+#boxes {
+    position: absolute;
+    left: 825;
+    top: 850;
+    width: 400;
+    background-color:;
+}
+
+#xy1{
+    background-color:lightgrey;
+    border: 4px solid;
+    border-color: black black grey black;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#funct1 {
+    background-color:lightgrey;
+    color:black;
+    border: 4px solid;
+    border-color: darkgrey limegreen limegreen limegreen;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+#boxes2 {
+    position:absolute;
+    left:850;
+    top:286;
+    width:200;
+}
+
+#xy2 {
+    background-color:lightgrey;
+    border: 4px solid;
+    border-color: black black grey black;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#funct2 {
+    background-color:lightgrey;
+    color:black;
+    border: 4px solid;
+    border-color: darkgrey blue blue blue;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+#boxes3 {
+    position:absolute;
+    left:850;
+    top: 50;
+    width:200;
+}
+
+#THEBUTT {
+    width:200;
+    background-color:red;
+    border: 4px solid;
+    border-color: grey darkgrey grey darkgrey;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+#funct3 {
+    background-color:lightgrey;
+    color:black;
+    border: 4px solid;
+    border-color: darkgrey red red red;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+#funct3 input {
+    width: 120;
+}
+
+input {
+    width: 50;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#canvas2 {
+    position: absolute;
+    top: 10;
+    right: 10;
+}
+
+#steps {
+    width: 70px;
+}
+
+.funcTxt {
+    color:;
+    font-weight:800;
+    text-decoration:underline;
+}

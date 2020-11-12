@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>sucky graphical Calculator</title>
+        <link id="style" rel="stylesheet" href="calc.css">
+        <link href="https://fonts.googleapis.com/css2?family=Turret+Road&display=swap" rel="stylesheet">
+    </head>
+    <body onload="hideShow()">
+        <div id="Div3">
+            <canvas id="canvas3" width="800" height="400" style="border: 1px solid red">
+            </canvas>
+            <div id="boxes3">
+                <div id="BIGBUTT">
+                    <button id="THEBUTT" onclick="removeButt(1); setTimeout(() => updateCanvas(2), 10)" style="font-size:400%; background-color:red">
+                        !!HIT!!<br>!!ME!!
+                    </button>
+                </div>
+                <div id="funct3">
+                    <label for="canvasSize">
+                        &nbsppixels =
+                    </label>
+                    <input type="number" id="canvasSize" step="1" name="canvasSize" min="100" max="" value="800" onchange="">
+                </div>
+                <button id="reset" onclick="removeButt()">
+                    reset big red button
+                </button>
+            </div>
+        </div>
+        <div id="Div2">
+            <canvas id="canvas2" width="800" height="800" style="border: 1px solid blue">
+            </canvas>
+            <div id="boxes2">
+                <div id="xy2">
+                    <label for="c2x1">
+                            &nbspx1 =
+                    </label>
+                    <input type="number" id="c2x1" step="any" name="c2x1" min="0" max="" value="2" onchange="updateCanvas(1)">
+                    <label for="c2x2">
+                            x2 =
+                    </label>
+                    <input type="number" id="c2x2" step="any" name="c2x2" min="0" max="" value="2" onchange="updateCanvas(1)">
+                    <hr>
+                    <label for="c2y1">
+                            &nbspy1 =  
+                    </label>
+                    <input type="number" id="c2y1" step="any" name="c2y1" min="0" max="" value="2" onchange="updateCanvas(1)">
+                    <label for="c2y2">
+                            y2 =
+                    </label>
+                    <input type="number" id="c2y2" step="any" name="c2y2" min="0" max="" value="2" onchange="updateCanvas(1)">
+                </div>
+                <div id="funct2">
+                    <p class="funcTxt">
+                        &nbsp(r + i)² + (cr + ci)
+                    </p>
+                    <label for="c2r">
+                            &nbspr =
+                    </label>
+                    <input type="number" id="c2r" step="any" name="c2r" min="" max="" value="0" onchange="updateCanvas(1)">
+                    <label for="c2i">
+                            i =
+                    </label>
+                    <input type="number" id="c2i" step="any" name="c2i" min="" max="" value="0" onchange="updateCanvas(1)">
+                    <label for="c2cr">
+                            &nbspcr =  
+                    </label>
+                    <input type="number" id="c2cr" step="any" name="c2cr" min="" max="" value="0" onchange="updateCanvas(1)">
+                    <label for="c2ci">
+                            ci =
+                    </label>
+                    <input type="number" id="c2ci" step="any" name="c2ci" min="" max="" value="0" onchange="updateCanvas(1)">
+                    <label for="steps">
+                            &nbspiterations =
+                    </label>
+                    <input type="number" id="steps" step="1" name="steps" min="0" max="255" value="255" onchange="updateCanvas(1)">
+                    <p id="escStepDispaly">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button onclick="hideShow()">
+            show/hide
+        </button>
+        <div id="hubDiv">
+            <a  id="hub" href="../hub.html">
+                back to the Hub
+            </a>
+        </div>
+        <div id="Div1">
+            <hr>
+            <canvas id="canvas1" width="800" height="800" style="border: 1px solid black">
+            </canvas>
+            <div id="boxes">
+            <br>
+                <div id="xy1">
+                    <label for="x1">
+                        &nbspx1 =
+                    </label>
+                    <input type="number" id="x1" step="any" name="x1" min="0" value="50" onchange="updateCanvas(0)">
+                    <label for="x2">
+                        x2  =
+                    </label>
+                    <input type="number" id="x2" step="any" name="x2" min="0" value="50" onchange="updateCanvas(0)">
+                    <hr>
+                    <label for="y1">
+                        &nbspy1  =
+                    </label>
+                    <input type="number" id="y1" step="any" name="y1" min="0" value="50" onchange="updateCanvas(0)">
+                    <label for="y2">
+                        y2  =
+                    </label>
+                    <input type="number" id="y2" step="any" name="y2" min="0" max="" value="50" onchange="updateCanvas(0)">
+                </div>
+                <div id="funct1">
+                    <p class="funcTxt">
+                        &nbspf(x) = ax+bx^c+d
+                    </p>
+                    <label for="a">
+                        &nbspa  =
+                    </label>
+                    <input type="number" id="a" step="any" name="a" min="" max="" value="0" onchange="updateCanvas(0)">
+                    <label for="b">
+                        b  =
+                    </label>
+                    <input type="number" id="b" step="any" name="b" min="" max="" value="0" onchange="updateCanvas(0)">
+                    <label for="c">
+                        c  =
+                    </label>
+                    <input type="number" id="c" step="any" name="c" min="" max="" value="0" onchange="updateCanvas(0)">
+                    <label for="d">
+                        d  =
+                    </label>
+                    <input type="number" id="d" step="any" name="d" min="" max="" value="0" onchange="updateCanvas(0)">
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="calc.js">
+    </script>
+</html>

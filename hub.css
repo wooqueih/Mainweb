@@ -1,0 +1,38 @@
+header {
+    font-family: 'Teko', sans-serif;
+    font-size: 60px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: black;
+    top: 0;
+} 
+
+.sidebar {
+    color: white;
+    height:; /* Full-height: remove this if you want "auto" height */
+    width: 400px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 400; /* Stay at the top */
+    left: 0;
+    background-color: darkgrey; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.sidebar h1 {
+    margin-bottom: 0px;
+    text-decoration:underline;
+}
+
+.todo {
+    color:grey;
+}
+
+main {
+    font-size: 30px;
+    text-align:center;
+    font-family: 'Teko', sans-serif;
+}
