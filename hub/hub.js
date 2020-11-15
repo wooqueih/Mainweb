@@ -8,8 +8,9 @@ function reqListener () {
 
 var xmlHttpReq = new XMLHttpRequest();
 xmlHttpReq.addEventListener("load", reqListener)
-xmlHttpReq.open("GET", "http://localhost:8080/?file=to-do.json");
+xmlHttpReq.open("GET", "http://localhost:8080/to-do.json");
 xmlHttpReq.send();
-/*var json = JSON.parse();
+
+/*var json = JSON.parse(xmlHttpReq.responseText);
 console.log(json);*/
 
