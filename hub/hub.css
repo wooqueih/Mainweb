@@ -14,7 +14,7 @@ header {
     width: 400px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 400px; /* Stay at the top */
+    top: 275px; /* Stay at the top */
     left: 0;
     background-color: darkgrey; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -35,4 +35,12 @@ main {
     font-size: 30px;
     text-align:center;
     font-family: 'Teko', sans-serif;
+}
+
+#wantToDo {
+    line-height: 25px;
+}
+
+#haveToDo {
+    line-height: 25px;
 }
