@@ -21,9 +21,10 @@ http.createServer(function (req, res) {
             res.writeHead(404, {'Content-Type': 'text/html'});
             return res.end("404 Not Found");
         }
-        res.writeHead(200, {'Content-Type': 'text/css', "Content-Security-Policy": "default-src 'unsafe-inline' http://localhost:8080 https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'unsafe-inline' http://localhost:8080"});
+        var typeReqArr = q.pathname.split(".");
+        res.writeHead(200, {'Content-Type': 'text/' + typeReqArr[1], "Content-Security-Policy": "default-src 'unsafe-inline' http://localhost:8080 https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'unsafe-inline' http://localhost:8080"});
         res.write(data);
         return res.end();
     });
     }
-}).listen(8080); //css and js check needs to be implemented, else it won't work
+}).listen(8080);
