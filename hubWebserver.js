@@ -22,7 +22,13 @@ http.createServer(function (req, res) {
             return res.end("404 Not Found");
         }
         var typeReqArr = q.pathname.split(".");
-        res.writeHead(200, {'Content-Type': 'text/' + typeReqArr[1], "Content-Security-Policy": "default-src 'unsafe-inline' http://localhost:8080 https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'unsafe-inline' http://localhost:8080"});
+        var conType
+        if(typeReqArr[typeReqArr.length-1] == "js"){
+            conType = "application/javascript";
+        } else {
+            conType = "text/" + typeReqArr[typeReqArr.length-1];
+        }
+        res.writeHead(200, {'Content-Type': conType, "Content-Security-Policy": "default-src 'unsafe-inline' http://localhost:8080 https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'unsafe-inline' http://localhost:8080"});
         res.write(data);
         return res.end();
     });

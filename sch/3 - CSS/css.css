@@ -1,0 +1,29 @@
+h1 {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 800%;
+	color: blue;
+	text-decoration: underline;
+}
+
+body {
+	background-color: black;
+}
+
+p {
+	font-family: 'Black Ops One', cursive;
+	color: yellow;
+}
+
+.sidebar {
+	color: blue;
+	z-index= 1;
+	background-color: yellow;
+	font-family: 'Black Ops One', cursive;
+	position: fixed;
+	right: 0;
+	top: 400;
+	padding: 20px;
+	border: 1px solid black;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}

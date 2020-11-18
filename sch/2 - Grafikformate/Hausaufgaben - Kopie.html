@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Turret+Road&display=swap" rel="stylesheet">
+        <link id="style" rel="stylesheet" href="Style2.css"> 
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th></th>
+				<th>JPEG</th>
+				<th>GIF</th>
+				<th>PNG</th>
+				<th>BMP</th>
+				<th>TIF</th>
+				<th>SVG</th>
+			</tr>
+			<tr>
+				<td>Einsatzbereich</td>
+				<td>Fotos (komprimiert)</td>
+				<td>einfache Grafiken</td>
+				<td>Fotos,<br> einfache Grafiken </td>
+				<td>Originalbilder (unkomprimiert)</td>
+				<td>Fotos (komprimiert)</td>
+				<td>Vektorgrafiken<br>(oft einfache Grafiken)</td>
+			</tr>
+			<tr>
+				<td>Vorteile</td>
+				<td>24Bit Farbtiefe,<br> weit verbreitet,<br> geringe Speichergröße</td>
+				<td>geringe Dateigröße,<br> transparente Pixel</td>
+				<td>24Bit Farbtiefe,<br> keine Kompression</td>
+				<td>originalgetreu,<br> max. 24Bit Farbtiefe</td>
+				<td>universelles Format<br>(funktioniert auf allen<br> Betriebsystemen),<br>Verfälschungsfreie<br> Komprimierung, 1-32Bit Farbtiefe</td>
+				<td>beliebig skalierbar<br>(Qualität bleibt erhalten)</td>
+			</tr>
+			<tr>
+				<td>Nachteile</td>
+				<td>Komprimierung mit Qualitätsverlust</td>
+				<td>8Bit Farbtiefe</td>
+				<td>größerer Speicherbedarf<br> als JPEG und GIF,<br>ältere Browser unterstützen<br> das Format nicht</td>
+				<td>große Dateigröße</td>
+				<td>n/a</td>
+				<td>größerer Speicherbedarf<br> als GIF</td>
+			</tr>
+		</table>
+		<button id="button" type="button" onclick="changeCSS()">
+            Light mode
+        </button>
+		<br>
+		<a href="../index.html">
+					zurück zur Homepage
+		</a>
+		<script>
+            var stylesheet = 1;
+            function changeCSS(){
+                if (stylesheet == 1 || stylesheet === undefined){
+                    document.getElementById("style").href="Style1.css";
+                    document.getElementById("button").innerHTML = "Light mode";
+                    stylesheet = 0;
+                } else if (stylesheet == 0){
+                    document.getElementById("style").href="Style2.css";
+                    document.getElementById("button").innerHTML = "Dark mode";
+                    stylesheet = 1;
+                } else {
+                    window.alert("Something went wrong");
+                    stylesheet = 1
+                }
+            }
+        </script>
+	</body>
+</html>

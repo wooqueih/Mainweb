@@ -1,0 +1,23 @@
+button {
+    background-color:#000033;
+    color: limegreen;
+    font-family: 'Orbitron', sans-serif;
+	position: fixed,
+}
+table, th, td {
+    font-family: 'Turret Road', cursive;
+    border: 1px solid black;
+    border-radius: 0px;
+}
+p {
+	font-family: 'Turret Road', cursive;
+}
+table {
+    width: 100%;
+}
+th {
+    font-size: 300%;
+}
+body {
+    background-color: white;
+}

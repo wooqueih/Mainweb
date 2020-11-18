@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Turret+Road&display=swap" rel="stylesheet">
+        <link id="style" rel="stylesheet" href="http://localhost:8080/sch/1-Hausaufgaben/Style2.css"> 
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th></th>
+				<th>Montag</th>
+				<th>Dienstag</th>
+				<th>Mittwoch</th>
+				<th>Donnerstag</th>
+				<th>Freitag</th>
+			</tr>
+			<tr>
+				<td><b>1</b></td>
+				<td>Hausaufgabe</td>
+				<td></td>
+				<td></td>
+				<td>Hausaufgabe</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><b>2</b></td>
+				<td>Hausaufgabe</td>
+				<td>Hausaufgabe</td>
+				<td>Hausaufgabe</td>
+				<td></td>
+				<td>Hausaufgabe</td>
+			</tr>
+			<tr>
+				<td><b>3</b></td>
+				<td>Hausaufgabe</td>
+				<td></td>
+				<td>Hausaufgabe</td>
+				<td></td>
+				<td>Hausaufgabe</td>
+			</tr>
+			<tr>
+				<td><b>4</b></td>
+				<td></td>
+				<td>Hausaufgabe</td>
+				<td>Hausaufgabe</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><b>5</b></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>Hausaufgabe</td>
+				<td>Hausaufgabe</td>
+			</tr>
+			<tr>
+				<td><b>6</b></td>
+				<td>Hausaufgabe</td>
+				<td>Hausaufgabe</td>
+				<td>Hausaufgabe</td>
+				<td>Hausaufgabe</td>
+				<td>Hausaufgabe</td>
+			</tr>
+		</table>
+		<a href=http://www.kwrg.de>
+            KWR Homepage <--- <br>
+		</a>
+		<a href=mailto:max.mustermann@web.de>
+            E-Mail von irgendeinem Typen <--- <br>
+		</a>
+		<button id="button" type="button" onclick="changeCSS()">
+            Light mode
+        </button>
+        <img id="pic" src="http://localhost:8080/sch/1-Hausaufgaben/pic1.png" width="500" heigth="540">
+		<br>
+		<a href="http://localhost:8080/sch/index.html">
+					zurück zur Homepage
+		</a>
+		<p>
+			Bildquellen : 
+		</p>
+		<a href="vectorstock.com">
+			vectorstock.com (Sonne)
+		</a>
+		<a href simpledesktops.com>
+			simpledesktops.com (Mond)
+		</a>
+        <script>
+            var stylesheet = 1;
+            function changeCSS(){
+                if (stylesheet == 1 || stylesheet === undefined){
+                    document.getElementById("style").href="http://localhost:8080/sch/1-Hausaufgaben/Style1.css";
+                    document.getElementById("button").innerHTML = "Light mode";
+                    document.getElementById("pic").src="http://localhost:8080/sch/1-Hausaufgaben/pic2.jpeg";
+                    stylesheet = 0;
+                } else if (stylesheet == 0){
+                    document.getElementById("style").href="http://localhost:8080/sch/1-Hausaufgaben/Style2.css";
+                    document.getElementById("button").innerHTML = "Dark mode";
+                    document.getElementById("pic").src="http://localhost:8080/sch/1-Hausaufgaben/pic1.png";
+                    stylesheet = 1;
+                } else {
+                    window.alert("Something went wrong");
+                    stylesheet = 1
+                }
+            }
+        </script>
+	</body>
+</html>
