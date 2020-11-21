@@ -4,11 +4,12 @@
     background-color: bisque;
     text-align: center;
     font-size: 300%;
-    padding: 20px;
+    padding: 10px;
 } header a {
     line-height: 20px;
     font-size: 75%;
 } .cv {
+    margin: 10px;
     height: 600px;
     width: 600px;
     border: 1px solid black;
